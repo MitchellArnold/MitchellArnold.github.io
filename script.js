@@ -101,4 +101,4 @@ function resizeend() {
 					$('section span').css('opacity','1');
 				},1500);
 		}               
-}	
+}

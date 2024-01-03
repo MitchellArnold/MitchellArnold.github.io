@@ -1,0 +1,98 @@
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: 100%;
+  z-index: 1000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+main .scroll-content {
+  position: absolute;
+  width: 100vw;
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-origin: 50vw 50vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+main section {
+  height: 700vh;
+}
+main section span {
+  position: absolute;
+  text-transform: uppercase;
+  left: 50%;
+  font-family: monospace;
+  top: 100vh;
+  z-index: 10000;
+  transform: translateX(-50%) translateY(-100%);
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+}
+main section span:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background: black;
+  left: 50%;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.fish {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1000;
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+.fish svg {
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  left: 50%;
+  top: 50%;
+  width: 75%;
+  height: auto;
+  z-index: 200;
+  font-family: sans-serif;
+  transform: translateX(-50%) translateY(-50%);
+}
+.fish .cod {
+  width: 15vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  filter: blur(0.025px);
+}
+.fish .cod:nth-of-type(3n) {
+  width: 17vw;
+  z-index: 1000;
+  filter: blur(0px);
+}
+.fish .cod:nth-of-type(odd) {
+  width: 12vw;
+  z-index: 10;
+  filter: blur(0.5px);
+}
+.fish .cod img {
+  width: 100%;
+  height: auto;
+}
+.fish.reverse .cod img {
+  transform: scaleX(-1);
+}
