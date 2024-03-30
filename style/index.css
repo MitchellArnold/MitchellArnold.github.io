@@ -37,14 +37,30 @@ html {
 
   
   .banner {
+    /* justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; */
+    width: 100%;
+    height: 100%;
+    background: #002b65;
+    mix-blend-mode: soft-light;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9em;
+    color: white;
+  }
+
+  .center-text {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: #002b65;
-    mix-blend-mode: soft-light;
+    /* left: 30%; */
+    /* background: #002b65;
+    mix-blend-mode: soft-light; */
     cursor: pointer;
     font-family: "Lato", sans-serif;
     font-size: 0.9em;
